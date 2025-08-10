@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('https://th.bing.com/th/id/R.f778e9c6c31cf10a5f7afa5c4f42ae38?rik=SG1pzcHM4IfUTA&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fe%2f5%2f0%2f1444100-vertical-4k-games-wallpaper-2560x1600-for-android.jpg&ehk=KAGcbc%2fvOgFuVdD1kJ9MtcG%2bnEGB13LELqd0hn7SM2A%3d&risl=&pid=ImgRaw&r=0'); /* Use your own URL if needed */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            color: #fff;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        }
+
+        form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        button {
+            margin-top: 30px;
+            width: 100%;
+            padding: 12px;
+            background-color: #ffcc00;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h1>Student Registration Form</h1>
+
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your full name">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email">
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="80" placeholder="Enter your age">
+
+        <label>Gender:</label>
+        <input type="radio" name="Gender" value="male"> Male
+        <input type="radio" name="Gender" value="female"> Female
+
+        <label>Qualifications:</label>
+        <select name="qualification">
+            <option>Select any one</option>
+            <option>BE</option>
+            <option>BTECH</option>
+            <option>BCA</option>
+            <option>MBA</option>
+        </select>
+
+        <label>Skills:</label>
+        <input type="checkbox" name="skills" value="C"> C
+        <input type="checkbox" name="skills" value="C++"> C++
+        <input type="checkbox" name="skills" value="Java"> Java
+        <input type="checkbox" name="skills" value="Python"> Python
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
