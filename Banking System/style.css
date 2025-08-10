@@ -1,0 +1,22 @@
+#area{
+   text-align: center;
+   margin: 200px 600px 200px 600px;
+   padding: 6px  6px 6px 6px;
+   background-color: beige;
+   border-radius: 15px;
+}
+#deposit{
+    background-color: green;
+    color:white;
+    padding: 10px 45px 10px 45px;
+    margin: 10px 5px ;
+}
+#Withdraw{
+    background-color :red;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    margin: 5px 10px;
+}
+#balanceSection{
+    color: green;
+}
